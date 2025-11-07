@@ -8,6 +8,7 @@ user_name = input("Enter your username:")
 pass_word = int(input("Enter your pin: "))
 userfound = False
 x = 0
+found = False
 while x < len(users):
     test = users[x]
     if user_name == test:
