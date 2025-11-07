@@ -1,0 +1,5 @@
+file = open("textfile.txt", "a")
+input_text = input("Hi there! Write something:\n")
+file.write(input_text)
+file.close()
+print(f"Sucessfully save the text {input_text}")
