@@ -14,10 +14,9 @@ def checker(Given_number):
     powered_integer_container = []
     total_sum=0
     for i in range(length):
-        powered_integer_container.append(math.pow(integer_container[i],length))
+        powered_integer_container.append(int(math.pow(integer_container[i],length)))
         total_sum+=powered_integer_container[i]
 
-    print(total_sum)
     if total_sum==int(Number):
         return True
     else:
