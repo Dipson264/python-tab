@@ -17,20 +17,19 @@ def n_sum(n):
 great(2,6,7)
 fahren_conv(25)
 print("hi", end="") 
-print(n_sum(4))'''
+print(n_sum(4))
 
 
 def pattern_printer(n):
-    i=0
-    j=0
-    
-    while (i<n):
-        while (j<i):
-            print("*",end="")
-            j+=1
-        print("\n")
-        i+=1
+    if(n==0):
+        return
+    print("*"*n)
+    pattern_printer(n-1)
     
 
 
-pattern_printer(3)
+pattern_printer(n=input("Enter a number:"))'''
+
+
+
+
